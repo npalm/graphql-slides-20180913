@@ -49,9 +49,13 @@ http://graphql.org/users/
 
 
 !SUB
-# Model
-<img data-src="images/datamodel-white.png" height="80%" width="80%">
+<img data-src="images/model_0.png" height="80%" width="80%">
 
+!SUB
+<img data-src="images/model_1.png" height="80%" width="80%">
+
+!SUB
+<img data-src="images/model_2.png" height="80%" width="80%">
 
 !SUB
 # DEMO
@@ -62,6 +66,7 @@ http://graphql.org/users/
 ### Demo internals
 ![demo-1-1](images/demo-1-1.png)
 
+
 !SUB
 ### Demo internals
 ![demo-1-3](images/demo-1-2.png)
@@ -71,29 +76,30 @@ http://graphql.org/users/
 ![demo-1-3](images/demo-1-3.png)
 
 !SUB
-### Demo internals
+### HTTP request
+<div class="fragment" align="left">
+
+```json
+// HTTP POST request body
+{  
+   "query":"query { persons { name } }"
+}
+```
 
 <div class="fragment" align="left">
-<small>HTTP Request (POST)</small>
-<pre><code>
-{
-	"query": "query { talks { title } }"
-}
-</pre></code>
-</div>
 
-<div class="fragment" align="left">
-<small>HTTP Response</small>
-<pre ><code>
-{
-  "data": { ... }
+```json
+// HTTP response body
+{  
+   "data":{  
+      "persons":[  
+         {  
+            "name":"..."
+         },
+      ]
+   }
 }
-</pre></code>
-
-<div align="center">
-[https://github.com/npalm/graphiql](https://github.com/npalm/graphiql)
-</div>
-</div>
+```
 
 !SUB
 ### GraphQL Queries : Arguments
@@ -173,26 +179,29 @@ mutation {
 
 !SUB
 ### GraphQL Subscriptions
-Subscribing to events
 
+<div class="fragment" align="left">
 
-<pre class="fragment"><code>
+```
 subscription {
   comments {
     comments
     author
   }
 }
-</pre></code>
-<pre class="fragment"><code>
+```
+
+<div class="fragment" align="left">
+
+```json
 "data" : {
   "comments" : {
-    "author" : "..."
+    "comment" : "Testing shows the presence,
+                 not the absence of bugs"
     "author" : "Edsgar"
   }
 }
-</pre></code>
-
+```
 
 !SUB
 ## Schema
@@ -236,6 +245,13 @@ type Person {
 - GraphQL (schema first) via GraphQL tools <!-- .element: class="fragment" -->
 - GraphQL interface provided <!-- .element: class="fragment" -->
 - Build via Gradle (and Docker) <!-- .element: class="fragment" -->
+
+
+!SUB
+
+<!-- .slide: data-background-size="contain" data-background="images/graphql-java.jpg" data-transition="slide" data-background-transition="fade" -->
+
+
 
 !SUB
 ![](images/sample-javascript.png)
