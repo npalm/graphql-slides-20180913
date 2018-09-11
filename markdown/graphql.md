@@ -1,13 +1,3 @@
-## What is GraphQL not
-
-<ul>
-  <li class="fragment">Not a database</li>
-  <li class="fragment">A standard (not yet)</li>
-  <li class="fragment">A library</li>
-  <li class="fragment">Language specific</li>
-</ul>
-
-!SUB
 ## What is GraphQL
 <ul>
   <li class="fragment">A query language allow to fetch what you what</li>
@@ -20,7 +10,6 @@
 
 !SUB
 ## Who is using GraphQL
-
 
 <img data-src="images/users.png" height="60%" width="60%">
 
@@ -101,7 +90,7 @@ http://graphql.org/users/
 }
 ```
 
-!SUB
+!SLIDE
 ### GraphQL Queries : Arguments
 
 In REST you pas a single set of argument as query parameters in GraphQL **every field and nested object** can get its own set.
@@ -116,11 +105,25 @@ In REST you pas a single set of argument as query parameters in GraphQL **every 
                         }
 </code></pre>
 
-
 !SUB
 ### GraphQL Queries : Aliases
 **Aliases** let you rename the result of a field to anything you want.
 <pre class="fragment"><code>
+{                                 {
+  person(id: 1)                     "data": {
+    name                              "person" {
+  }                                       "name": "Niek Palm"
+}                                      }
+                                    }
+                                  }
+
+</code></pre>
+
+
+!SUB
+### GraphQL Queries : Aliases
+**Aliases** let you rename the result of a field to anything you want.
+<pre><code>
 {                                 {
   speaker: person(id: 1)            "data": {
     fullName: name                    "speaker" {
@@ -226,7 +229,7 @@ type Person {
 </code></pre>
 
 
-!SUB
+!SLIDE
 ### How can start implementing
 ![lang](images/graphql-languages-lib.png)
 
@@ -259,3 +262,14 @@ type Person {
 <img data-src="images/sample-javascript-graphiql.png" height="70%" width="70%">
 [https://github.com/npalm/graphql-js-demo](https://github.com/npalm/graphql-js-demo)
 </div>
+
+!SUB
+## GraphQL Architecture
+![graphql-architecture](images/rest-architecture-2.png)
+
+
+!SUB
+### Also Cool
+- GraphQL for datastores: [Postgres](https://github.com/graphile/postgraphile) / [Neo4j](https://github.com/neo4j-graphql)
+- Write a static blog using React and GraphQL, [Gatsby](https://www.gatsbyjs.org/)
+- gRPC with GraphQL [Google rejoiner](https://github.com/google/rejoiner)

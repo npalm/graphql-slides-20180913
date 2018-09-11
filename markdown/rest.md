@@ -1,3 +1,6 @@
+<!-- .slide: data-background="images/past.jpg" data-transition="slide" data-background-transition="fade" -->
+
+!SUB
 ## REST API
 
 Resource: `/talks`
