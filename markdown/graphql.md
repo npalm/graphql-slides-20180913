@@ -1,6 +1,6 @@
 ## What is GraphQL
 <ul>
-  <li class="fragment">A query language allow to fetch what you what</li>
+  <li class="fragment">A query language that allow to fetch what you what</li>
   <li class="fragment">Flexible</li>
   <li class="fragment">A specification</li>
 </ul>
@@ -93,7 +93,7 @@ http://graphql.org/users/
 !SLIDE
 ### GraphQL Queries : Arguments
 
-In REST you pas a single set of argument as query parameters in GraphQL **every field and nested object** can get its own set.
+In REST you pass a single set of arguments as query parameters in GraphQL **every field and nested object** can get its own set.
 
 <pre class="fragment"><code>
 {                       {
@@ -188,7 +188,7 @@ mutation {
 ```
 subscription {
   comments {
-    comments
+    comment
     author
   }
 }
@@ -230,7 +230,7 @@ type Person {
 
 
 !SLIDE
-### How can start implementing
+### How to start implementing
 ![lang](images/graphql-languages-lib.png)
 
 [GraphQL.org](https://graphql.org) and [Awesome GraphQL](https://github.com/chentsulin/awesome-graphql)
