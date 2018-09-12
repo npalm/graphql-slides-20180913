@@ -8,7 +8,7 @@
     "blog": "https://040code.github.io",
     "talk": {
       "title": "GraphQL - The next generation API language",
-      "slides": "https://npalm.github.io/graphql-slides-20180913/"
+      "slides": "https://npalm.github.io/graphql-slides-20180913/",
       "demo": "https://github.com/npalm/graphql-java-demo"
     }
   }
