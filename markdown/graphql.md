@@ -150,6 +150,16 @@ fragment details on Person {
 ### GraphQL Queries : Variables
 A GraphQL query can be parameterized with variables, maximizing query reuse, and avoiding costly string building in clients at runtime.
 
+<div class="fragment" align="left">
+
+```json
+// HTTP POST request body
+{  
+  "query" : "query Query($id: Long!) {person($id: Long!) { name }}",
+  "variables" : {"id":11}
+}
+```
+
 
 !SUB
 # DEMO
@@ -205,6 +215,11 @@ subscription {
   }
 }
 ```
+
+!SUB
+# DEMO
+<img data-src="images/giphy-programming2.gif" height="60%" width="60%">
+
 
 !SUB
 ## Schema

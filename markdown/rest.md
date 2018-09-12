@@ -40,11 +40,3 @@ Resource `/speakers/niek`
   }
 }
 ```
-
-!SUB
-## REST Architecture
-![rest](images/rest-architecture.png)
-
-!SUB
-## REST Architecture
-![rest-2](images/rest-architecture-2.png)
