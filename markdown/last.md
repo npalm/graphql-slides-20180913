@@ -1,5 +1,25 @@
 ![thanks](images/tux.png)
 
+
+```
+query {  
+  me {
+    name
+    twitter
+    blog
+    talk {
+        tittle
+        slides
+        demo
+    }
+  }
+}
+
+```
+
+!SUB
+![thanks](images/tux.png)
+
 ```
 {
   "data": {

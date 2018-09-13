@@ -285,7 +285,7 @@ type Person {
 
 !SUB
 ### Also Cool
-- Backend As A Service [Graph Cool](https://www.graph.cool/)
+- Backend As A Service [Graph Cool](https://www.graph.cool/) 
 - GraphQL for datastores: [Postgres](https://github.com/graphile/postgraphile) / [Neo4j](https://github.com/neo4j-graphql)
 - Write a static blog using React and GraphQL, [Gatsby](https://www.gatsbyjs.org/)
 - gRPC with GraphQL [Google rejoiner](https://github.com/google/rejoiner)
